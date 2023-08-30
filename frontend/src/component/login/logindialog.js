@@ -24,7 +24,7 @@ const initialvalue={
   "mobile":"",
 }
 const Logindialog = ({open,setopen}) => {
-let login="";
+let login="g";
 
 const [input,setinput]=useState(initialvalue)
 const [image,setimage]=useState(initialvalue)
@@ -72,13 +72,13 @@ return (
           <>
         <p>Enter,Email/Mobile No.</p>
         <div className={style.inputstyle}>
-     <span> 91  | </span> <input/>
+     <span> 91  | </span> <input style={{border:"none" , outline:"none"}}/>
     
         </div>
         <p style={{marginTop:"9px",wordSpacing:"3px",marginBottom:"0px",fontSize:"11px",letterSpacing:"1px",marginLeft:"21px"}}>By continuing you are <span  style={{color:"red",fontFamily:"italic",fontWeight:'bold'}}>agree</span> to term and <span  style={{color:"red",fontWeight:'bold'}}>privcy </span></p>
         <p style={{marginTop:"0px",marginBottom:"0px",fontSize:"11px",letterSpacing:"1px",marginLeft:"21px"}}>policy</p>
         <div className={style.buttonstyle}>
-        <Button sx={{width:"300px",height:"51px"}} variant="contained">Request OTP</Button>
+        <Button sx={{width:"300px",height:"51px"}} variant="contained">Submit</Button>
      </div>
      </>
      :

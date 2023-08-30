@@ -6,6 +6,7 @@ import Inputbox from './inputbox';
 import Button from '@mui/material/Button';
 import { red } from '@mui/material/colors';
 import Logindialog from '../login/logindialog';
+import {Link} from "react-router-dom";
 
 
 const CustomizedApp= styled(AppBar)`
@@ -59,7 +60,7 @@ function handleOpen(){
           
             <Ptag>Become a Seller</Ptag>
             <Ptag>more</Ptag>
-            <Ptag>cart</Ptag>
+            <Link to={"/cart"} style={{textDecoration:"none",color:"white"}}><Ptag>cart</Ptag></Link>
 
             </Toolbar>
         </CustomizedApp>

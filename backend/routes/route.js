@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const productDetail=require("../controller/productDetail")
+const handlepaytm=require("../controller/handlepaytm.js")
+
 
 const { product, flipusers } = require("../model/product-schema.js");
 
@@ -40,5 +42,9 @@ router.get("/product",async function(req,res){
 })
 
 router.get("/product/:id" , productDetail)
+
+// for payment product
+
+router.post("/paytm",handlepaytm)
 
 module.exports = router;
